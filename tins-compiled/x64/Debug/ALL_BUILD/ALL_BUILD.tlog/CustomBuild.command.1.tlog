@@ -1,0 +1,10 @@
+^C:\USERS\ROHAN\SOURCE\E\LIBTINS-4.2\LIBTINS-4.2\CMAKELISTS.TXT
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/rohan/source/e/libtins-4.2/libtins-4.2 -BC:/Users/rohan/source/e/libtins-4.2/libtins-4.2/build --check-stamp-file C:/Users/rohan/source/e/libtins-4.2/libtins-4.2/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
